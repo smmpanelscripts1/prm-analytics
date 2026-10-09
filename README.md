@@ -6,7 +6,12 @@ Compatible with **Flarum 2.0**.
 
 ## Screenshot
 
-![Admin Analytics dashboard](docs/dashboard.png)
+<img width="1650" height="868" alt="image" src="https://github.com/user-attachments/assets/9102ab21-15f1-4d2b-927f-e60968ea39c0" />
+<img width="1647" height="866" alt="image" src="https://github.com/user-attachments/assets/25cb453d-7f2a-47e4-9ea5-47d0f0a7df86" />
+<img width="1648" height="867" alt="image" src="https://github.com/user-attachments/assets/ea0936a9-1bb2-43cd-ae63-b9ab39c6c427" />
+
+
+
 
 ## What it does
 
