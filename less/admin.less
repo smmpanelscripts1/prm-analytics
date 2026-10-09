@@ -1,0 +1,186 @@
+// Keep layout thin — colors/spacing come from Flarum admin + StatisticsWidget.
+
+.PrmAnalyticsPage {
+  margin-top: 20px;
+}
+
+.PrmAnalytics-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.PrmAnalytics-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.PrmAnalytics-subtitle {
+  margin: 4px 0 0;
+  color: var(--muted-color);
+  font-size: 13px;
+}
+
+.PrmAnalytics-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.PrmAnalytics-ranges {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.PrmAnalytics-kpis {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+@media (max-width: 1100px) {
+  .PrmAnalytics-kpis {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .PrmAnalytics-kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.PrmAnalytics-kpi {
+  min-width: 0;
+  padding: 10px 12px;
+  background: var(--control-bg);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+}
+
+.PrmAnalytics-kpiLabel {
+  margin: 0;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--muted-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.PrmAnalytics-kpiValue {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.PrmAnalytics-kpiMeta {
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--muted-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .StatisticsWidget-change {
+    margin-left: 4px;
+    font-weight: bold;
+  }
+
+  .PrmAnalytics-kpiHint {
+    margin-left: 4px;
+  }
+}
+
+.PrmAnalytics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.PrmAnalytics-span2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .PrmAnalytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .PrmAnalytics-span2 {
+    grid-column: auto;
+  }
+}
+
+.PrmAnalytics-chartPanel {
+  background: var(--control-bg);
+  border-radius: var(--border-radius);
+  padding: 12px 16px 8px;
+}
+
+.PrmAnalytics-chartTitle {
+  margin: 0 0 8px;
+  height: 30px;
+  padding-top: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--muted-color);
+}
+
+.PrmAnalytics-chartCanvasWrap {
+  position: relative;
+  height: 220px;
+}
+
+.PrmAnalytics-note,
+.PrmAnalytics-error {
+  grid-column: 1 / -1;
+  color: var(--muted-color);
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.PrmAnalytics-error {
+  color: #d0011b;
+}
+
+.PrmAnalyticsMiniWidget {
+  padding-top: 0;
+
+  .PrmAnalyticsMiniWidget-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    color: var(--muted-color);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .PrmAnalyticsMiniWidget-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .PrmAnalyticsMiniWidget-item {
+    min-width: 100px;
+    flex: 1;
+    padding: 8px 0;
+  }
+
+  .PrmAnalyticsMiniWidget-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+}

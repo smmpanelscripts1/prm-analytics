@@ -1,0 +1,28 @@
+{
+    "name": "prm/analytics",
+    "description": "Advanced forum analytics dashboard — charts and KPIs beyond core Statistics.",
+    "type": "flarum-extension",
+    "version": "2.0.0",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^2.0.0-rc.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prm\\Analytics\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Analytics",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-chart-area",
+                "backgroundColor": "#0f766e",
+                "color": "#fff"
+            }
+        }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}
